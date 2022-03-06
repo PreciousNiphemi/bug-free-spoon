@@ -14,7 +14,7 @@ export const NavText = ({ children, onClick, ...restProps }: NavTextProps) => {
       d="flex"
       mr={[0, 3]}
       px={[3, 6]}
-      fontFamily="Montserrat"
+      fontFamily="'Montserrat', sans-serif"
       fontWeight={500}
       fontSize={{ base: "", md: "14px", lg: "15px", xl: "15px" }}
       lineHeight={{ base: "", md: "18.29px" }}

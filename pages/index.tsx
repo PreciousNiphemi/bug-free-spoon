@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { Box, Flex } from "@chakra-ui/react";
-// import { Backstory } from "@app/common";
-import { BackstorySection, HeroSection } from "@app/features";
+import { Backstory, SideBox, TradeCard } from "@app/common";
+import { BackstorySection, HeroSection, WhySection } from "@app/features";
 
 const IndexPage = () => (
-  <Flex>
+  <Flex flexDir="column">
     <HeroSection />
-    {/* <BackstorySection /> */}
-
-    {/* <Backstory /> */}
+    <BackstorySection />
+    <WhySection />
+    <Box padding={10}>
+      <TradeCard />
+    </Box>
+    {/* <SideBox /> */}
   </Flex>
 );
 

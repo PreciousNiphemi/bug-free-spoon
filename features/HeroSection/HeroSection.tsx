@@ -37,7 +37,7 @@ export const HeroSection = () => {
               </Box>
               <Text
                 color="#FFFFFF80"
-                fontFamily="Montserrat"
+                fontFamily="'Montserrat', sans-serif"
                 lineHeight="24.38px"
                 fontSize={{ base: "", md: "", lg: "", xl: "20px" }}
               >
@@ -73,7 +73,7 @@ export const HeroSection = () => {
               fontSize="20px"
               fontWeight={500}
               lineHeight="24.38px"
-              fontFamily="Montserrat"
+              fontFamily="'Montserrat', sans-serif"
             >
               Get Started
             </Text>

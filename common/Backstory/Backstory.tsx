@@ -14,13 +14,13 @@ export const Backstory = () => {
         >
           Backstory
         </Text>
-        <Box position="absolute" left={60} top={108}>
-          <Image
-            src="/images/wrapper.svg"
-            width="160px"
-            //  height="100px"
-          />
-        </Box>
+      </Box>
+      <Box position="absolute" left={60} top={108}>
+        <Image
+          src="/images/wrapper.svg"
+          width="160px"
+          //  height="100px"
+        />
       </Box>
 
       <Box

@@ -5,9 +5,9 @@ export const BackstorySection = () => {
   return (
     <Box
       px="90"
-      py="80"
+      py="20"
+      h="80vh"
       width="100%"
-      // h="480px"
       display="flex"
       justifyContent="space-between"
       backgroundImage="/images/Polypodium.svg"
@@ -15,6 +15,7 @@ export const BackstorySection = () => {
       backgroundPosition="right bottom"
     >
       <Backstory />
+
       <Box
         maxWidth="677px"
         minWidth="677px"
