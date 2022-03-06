@@ -7,16 +7,12 @@ export const BackstorySection = () => {
       px="90"
       py="80"
       width="100%"
-      h="480px"
+      // h="480px"
       display="flex"
       justifyContent="space-between"
       backgroundImage="/images/Polypodium.svg"
       backgroundRepeat="no-repeat"
       backgroundPosition="right bottom"
-
-      //   backgroundPosition="100% 100%"
-
-      //   backgroundColor="red"
     >
       <Backstory />
       <Box

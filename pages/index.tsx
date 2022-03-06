@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Box, Flex } from "@chakra-ui/react";
 // import { Backstory } from "@app/common";
-import { BackstorySection } from "@app/features";
+import { BackstorySection, HeroSection } from "@app/features";
 
 const IndexPage = () => (
   <Flex>
-    <BackstorySection />
+    <HeroSection />
+    {/* <BackstorySection /> */}
 
     {/* <Backstory /> */}
   </Flex>
