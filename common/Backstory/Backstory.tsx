@@ -4,7 +4,12 @@ export const Backstory = () => {
   return (
     <Stack spacing={20} backgroundColor="#fff">
       <Box display="flex" flexDir="column">
+        <Box mt={1}>
+          <Image src="/images/wrapper.svg" width="160px" />
+        </Box>
         <Text
+          position="absolute"
+          pl="4"
           color="#000000"
           fontSize="30px"
           alignSelf="center"
@@ -14,13 +19,6 @@ export const Backstory = () => {
         >
           Backstory
         </Text>
-      </Box>
-      <Box position="absolute" left={60} top={108}>
-        <Image
-          src="/images/wrapper.svg"
-          width="160px"
-          //  height="100px"
-        />
       </Box>
 
       <Box
