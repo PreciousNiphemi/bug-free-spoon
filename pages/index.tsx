@@ -6,6 +6,7 @@ import {
   HeroSection,
   WhySection,
   PricingSection,
+  ContactSection,
 } from "@app/features";
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <BackstorySection />
     <WhySection />
     <PricingSection />
+    <ContactSection />
     <Footer />
   </Flex>
 );

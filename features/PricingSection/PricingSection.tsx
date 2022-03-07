@@ -6,6 +6,8 @@ import { AiOutlineWarning, AiFillWarning } from "react-icons/ai";
 export const PricingSection = () => {
   return (
     <Flex
+      position="relative"
+      top={100}
       py={20}
       flexDirection="column"
       backgroundRepeat="no-repeat"
@@ -54,7 +56,7 @@ export const PricingSection = () => {
           Trade-Ideas package
         </Text>
       </Box>
-      <Flex justifyContent="center">
+      <Flex justifyContent="center" pb={28}>
         <Wrap justify="center" spacing="8">
           {subscriptionDetails.map((details, detailsId) => {
             return (
