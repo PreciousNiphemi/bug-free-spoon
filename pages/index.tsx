@@ -14,11 +14,11 @@ const IndexPage = () => (
   <Flex flexDir="column">
     <HeroSection />
     <BackstorySection />
-    <WhySection />
-    <QuoteSection />
-    <PricingSection />
-    <ContactSection />
-    <Footer />
+    {/* <WhySection /> */}
+    {/* <QuoteSection /> */}
+    {/* <PricingSection /> */}
+    {/* <ContactSection /> */}
+    {/* <Footer />  */}
   </Flex>
 );
 

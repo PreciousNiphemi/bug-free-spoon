@@ -28,6 +28,7 @@ export const Backstory = () => {
         minHeight="240.59px"
         maxHeight="240.59px"
         backgroundColor="#000000"
+        display={{ base: "none", md: "none", lg: "block" }}
       />
     </Stack>
   );
