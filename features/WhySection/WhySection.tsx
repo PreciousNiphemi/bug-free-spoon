@@ -11,15 +11,25 @@ export const WhySection = () => {
       backgroundPosition="right bottom"
       backgroundImage=" /images/pattern-side-hero.svg"
       backgroundColor="#2737C7"
+      mt={20}
       px={{ base: "4", md: "10", lg: "10", xl: "16" }}
     >
-      <Flex justifyContent="space-between" height="80vh">
+      <Flex
+        flexDir={{ base: "column", md: "column", lg: "row" }}
+        justifyContent="space-between"
+        minH="80vh"
+        py={{ base: "10", md: "10", lg: 0 }}
+      >
         <Image src="images/people.svg" />
 
-        <Stack spacing={8} mt={28}>
+        <Stack
+          spacing={{ base: 4, md: 4, lg: 8 }}
+          alignSelf={{ base: "center", md: "center", lg: "center" }}
+        >
           <Text
             color="#fff"
             fontSize="40px"
+            textAlign={{ base: "center", md: "center", lg: "left" }}
             fontWeight={300}
             fontFamily="'KENOKY', sans-serif"
             lineHeight="48px"
@@ -31,11 +41,11 @@ export const WhySection = () => {
             <Text
               mt="20px"
               color="#fff"
-              textAlign="justify"
+              textAlign={{ base: "left", md: "center", lg: "justify" }}
               fontWeight={500}
               fontFamily="'Montserrat', sans-serif"
-              fontSize="18px"
-              lineHeight="21.94px"
+              fontSize={{ base: "15x", md: "15px", lg: "18px" }}
+              lineHeight={{ base: "18.29px", md: "18.29px", lg: "21.94px" }}
             >
               Help struggling traders get a solid footing in this business.
             </Text>
@@ -45,10 +55,11 @@ export const WhySection = () => {
 
             <Text
               color="#fff"
-              textAlign="justify"
+              textAlign={{ base: "left", md: "center", lg: "justify" }}
               fontWeight={500}
-              fontSize="18px"
-              lineHeight="21.94px"
+              fontFamily="'Montserrat', sans-serif"
+              fontSize={{ base: "15x", md: "15px", lg: "18px" }}
+              lineHeight={{ base: "18.29px", md: "18.29px", lg: "21.94px" }}
             >
               Community is powerful.
             </Text>
@@ -57,10 +68,11 @@ export const WhySection = () => {
             <CheckBox />
             <Text
               color="#fff"
-              textAlign="justify"
+              textAlign={{ base: "left", md: "center", lg: "justify" }}
+              fontFamily="'Montserrat', sans-serif"
               fontWeight={500}
-              fontSize="18px"
-              lineHeight="21.94px"
+              fontSize={{ base: "15x", md: "15px", lg: "18px" }}
+              lineHeight={{ base: "18.29px", md: "18.29px", lg: "21.94px" }}
             >
               It changed my life, it can change the lives of many others too.
             </Text>
