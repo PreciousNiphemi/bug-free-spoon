@@ -8,6 +8,7 @@ import {
   WrapItem,
   Flex,
 } from "@chakra-ui/react";
+import { RightSideBox } from "@app/common";
 
 export const Mentorship = () => {
   return (
@@ -30,6 +31,9 @@ export const Mentorship = () => {
           My Mentorship Pricing
         </Text>
       </Box>
+      <Flex mb="10" justifyContent="flex-end" width="100%">
+        <RightSideBox />
+      </Flex>
       <Flex justifyContent="center">
         <Wrap justify="center" spacing="14px">
           <WrapItem>
