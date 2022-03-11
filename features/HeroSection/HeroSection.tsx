@@ -11,8 +11,8 @@ import { NavigationHeader } from "@app/common";
 
 export const HeroSection = () => {
   const variant = useBreakpointValue({
-    base: `  <Text>Hi 👋; I’m Adekanbi Idowu</Text>`,
-    md: ` <Text>Hi 👋; <br /> I’m Adekanbi Idowu</Text>`,
+    base: `  <Text>Hi 👋, I’m Adekanbi Idowu</Text>`,
+    md: ` <Text>Hi 👋, <br /> I’m Adekanbi Idowu</Text>`,
   });
 
   return (
