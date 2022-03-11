@@ -15,8 +15,9 @@ export const Mentorship = () => {
     <Flex flexDirection="column">
       <Box
         py="4"
+        px="4"
         mb={10}
-        width="589.85px"
+        minW={{ base: "300px", md: "589.85px" }}
         alignSelf="center"
         borderRadius="50px"
         backgroundColor="#fff"
@@ -25,8 +26,8 @@ export const Mentorship = () => {
           fontFamily="'KENOKY', sans-serif"
           fontWeight={300}
           textAlign="center"
-          fontSize="50px"
-          lineHeight="50px"
+          fontSize={{ base: "35px", md: "50px" }}
+          lineHeight={{ base: "42px", md: "50px" }}
         >
           My Mentorship Pricing
         </Text>
@@ -34,16 +35,22 @@ export const Mentorship = () => {
       <Flex mb="10" justifyContent="flex-end" width="100%">
         <RightSideBox />
       </Flex>
-      <Flex justifyContent="center">
-        <Wrap justify="center" spacing="14px">
-          <WrapItem>
+      <Flex justifyContent="center" px={{ base: "0", md: "6px" }}>
+        <Wrap
+          justify={{ base: "center", md: "center" }}
+          direction={{ base: "column", md: "row" }}
+          // spacing={{ base: "20px", md: "10px", lg: "14px", xl: "14px" }}
+        >
+          <WrapItem
+          // pb={{ base: "40px", md: 0 }}
+          >
             <Box
               display="flex"
               backgroundColor="#fff"
               flexDirection="column"
               minHeight="604px"
-              minWidth="359.74px"
-              maxWidth="359.74px"
+              minWidth={{ base: "310.1px", md: "359.74px" }}
+              maxWidth={{ base: "310.1px", md: "359.74px" }}
               boxShadow="md"
             >
               <Box width="100%" height="17.12px" backgroundColor="#FFB800" />
@@ -66,20 +73,30 @@ export const Mentorship = () => {
                 >
                   $650
                 </Text>
-                <HStack alignSelf="center">
-                  <Box h={2} w={8} shadow="sm" />
+                <HStack alignSelf="center" pt={6}>
+                  <Box
+                    h={2}
+                    w={8}
+                    shadow="sm"
+                    display={{ base: "none", md: "block" }}
+                  />
                   <Text
                     color="#7D7D7D"
-                    fontSize="18px"
                     fontWeight={700}
-                    lineHeight="21.94px"
+                    fontSize={{ base: "15px", md: "18px" }}
+                    lineHeight={{ base: "18.29px", md: "21.94px" }}
                     fontFamily="'Montserrat', sans-serif"
                   >
                     Bootcamp Package
                   </Text>
-                  <Box h={2} w={8} shadow="sm" />
+                  <Box
+                    h={2}
+                    w={8}
+                    shadow="sm"
+                    display={{ base: "none", md: "block" }}
+                  />
                 </HStack>
-                <Stack alignSelf="center">
+                <Stack alignSelf="center" pt={6}>
                   <Stack direction="row">
                     <Text color="#323232">-</Text>
                     <Text
@@ -155,14 +172,17 @@ export const Mentorship = () => {
             </Box>
           </WrapItem>
           {/* Second Box */}
-          <WrapItem>
+          <WrapItem
+          // pb={{ base: "40px", md: 0 }}
+          // pl={{ base: 0, md: 4, lg: 10, xl: 0 }}
+          >
             <Box
               display="flex"
               backgroundColor="#fff"
               flexDirection="column"
               minHeight="604px"
-              minWidth="359.74px"
-              maxWidth="359.74px"
+              minWidth={{ base: "310.1px", md: "359.74px" }}
+              maxWidth={{ base: "310.1px", md: "359.74px" }}
               boxShadow="md"
             >
               <Box width="100%" height="17.12px" backgroundColor="#9327FF" />
@@ -185,20 +205,30 @@ export const Mentorship = () => {
                 >
                   $1800
                 </Text>
-                <HStack alignSelf="center">
-                  <Box h={2} w={8} shadow="sm" />
+                <HStack alignSelf="center" pt={6}>
+                  <Box
+                    h={2}
+                    w={8}
+                    shadow="sm"
+                    display={{ base: "none", md: "block" }}
+                  />
                   <Text
                     color="#7D7D7D"
-                    fontSize="18px"
                     fontWeight={700}
-                    lineHeight="21.94px"
+                    fontSize={{ base: "15px", md: "18px" }}
+                    lineHeight={{ base: "18.29px", md: "21.94px" }}
                     fontFamily="'Montserrat', sans-serif"
                   >
                     Bootcamp Package VIP
                   </Text>
-                  <Box h={2} w={8} shadow="sm" />
+                  <Box
+                    h={2}
+                    w={8}
+                    shadow="sm"
+                    display={{ base: "none", md: "block" }}
+                  />
                 </HStack>
-                <Stack alignSelf="center">
+                <Stack alignSelf="center" pt={6}>
                   <Stack direction="row">
                     <Text color="#323232">-</Text>
                     <Text
@@ -274,14 +304,16 @@ export const Mentorship = () => {
           </WrapItem>
 
           {/* Third Box */}
-          <WrapItem>
+          <WrapItem
+          // pt={{ base: "0", md: 4, lg: 10, xl: 0 }}
+          >
             <Box
               backgroundColor="#fff"
               display="flex"
               flexDirection="column"
               minHeight="604px"
-              minWidth="359.74px"
-              maxWidth="359.74px"
+              minWidth={{ base: "310.1px", md: "359.74px" }}
+              maxWidth={{ base: "310.1px", md: "359.74px" }}
               boxShadow="md"
             >
               <Box width="100%" height="17.12px" backgroundColor="#2737C7" />
@@ -304,21 +336,31 @@ export const Mentorship = () => {
                 >
                   $2500
                 </Text>
-                <HStack alignSelf="center">
-                  <Box h={2} w={8} shadow="sm" />
+                <HStack alignSelf="center" pt={6}>
+                  <Box
+                    h={2}
+                    w={8}
+                    shadow="sm"
+                    display={{ base: "none", md: "block" }}
+                  />
                   <Text
                     color="#7D7D7D"
                     textAlign="center"
-                    fontSize="18px"
                     fontWeight={700}
-                    lineHeight="21.94px"
+                    fontSize={{ base: "15px", md: "18px" }}
+                    lineHeight={{ base: "18.29px", md: "21.94px" }}
                     fontFamily="'Montserrat', sans-serif"
                   >
                     One on One Training Sessions
                   </Text>
-                  <Box h={2} w={8} shadow="sm" />
+                  <Box
+                    h={2}
+                    w={8}
+                    shadow="sm"
+                    display={{ base: "none", md: "block" }}
+                  />
                 </HStack>
-                <Stack alignSelf="center">
+                <Stack alignSelf="center" pt={6}>
                   <Stack direction="row">
                     <Text color="#323232">-</Text>
                     <Text

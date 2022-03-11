@@ -16,65 +16,38 @@ export const ContactSection = () => {
     setValue(inputValue);
   };
   return (
-    <Flex flexDir="column">
-      <Box width="30%"></Box>
-      <Box
-        paddingY="40px"
-        minH="60vh"
-        display="flex"
-        flexDir="column"
-        justifyContent="center"
-        mt="100px"
-        zIndex={2}
-        left="380"
-        width="60%"
-        backgroundColor="#fff"
-        position="absolute"
-      >
-        <Stack spacing="4" alignSelf="center">
-          <Box width="400.7px" backgroundColor="#FAFAFA" alignSelf="center">
-            <Input variant="filled" placeholder="Name*" borderRadius="0" />
-          </Box>
-          <Box width="400.7px" backgroundColor="#FAFAFA" alignSelf="center">
-            <Input
-              variant="filled"
-              placeholder="Email Address*"
-              borderRadius="0"
-            />
-          </Box>{" "}
-          <Box width="400.7px" backgroundColor="#FAFAFA" alignSelf="center">
-            <Input
-              variant="filled"
-              placeholder="Phone Number"
-              borderRadius="0"
-            />
-          </Box>{" "}
-          <Box width="400.7px" alignSelf="center">
-            <Textarea
-              value={value}
-              variant="filled"
-              onChange={handleInputChange}
-              placeholder="Message*"
-              size="sm"
-              height="200px"
-            />
-          </Box>
-        </Stack>
-      </Box>
+    <Flex
+      flexDir="column"
+      position={{
+        base: "relative",
+        md: "relative",
+        lg: "relative",
+        xl: "relative",
+      }}
+    >
       <Flex
         backgroundColor="#2737C7"
-        minH="90vh"
+        minH={{ base: "90vh", md: "90vh" }}
         width="100%"
-        clipPath=" polygon(41% 0, 82% 100%, 82% 100%, 0 100%, 0 0)"
+        clipPath={{
+          base: "none",
+          md: " polygon(41% 0, 82% 100%, 82% 100%, 0 100%, 0 0)",
+          lg: " polygon(41% 0, 82% 100%, 82% 100%, 0 100%, 0 0)",
+          xl: " polygon(41% 0, 82% 100%, 82% 100%, 0 100%, 0 0)",
+        }}
       >
         <Box
-          width="50%"
-          minH="90vh"
-          pl="10"
-          backgroundColor="#2737C7"
+          width={{ base: "100%", md: "40%", xl: "40%" }}
+          px={{ base: "8", md: "10", xl: "20" }}
+          pt={{ base: "20", md: "auto", xl: "auto" }}
+          minH="100%"
+          justifyContent="center"
           display="flex"
         >
-          <Flex justifyContent="center" flexDir="column" width="50%">
+          <Flex
+            justifyContent={{ base: "start", md: "center" }}
+            flexDir="column"
+          >
             <Flex justifyContent="center">
               <Text
                 fontFamily="'KENOKY', sans-serif"
@@ -130,6 +103,78 @@ export const ContactSection = () => {
           </Flex>
         </Box>
       </Flex>
+
+      {/* Input form */}
+      <Box
+        w={{ base: "80%", md: "50%", lg: "", xl: "50%" }}
+        paddingY="40px"
+        px={{ base: "24px", md: "auto", lg: "auto", xl: "auto" }}
+        maxH="661.86px"
+        display="flex"
+        // display="none"
+        zIndex={{ base: 100 }}
+        backgroundColor="#FFFFFF"
+        top={{ base: "80", md: "60", lg: "420px", xl: "20" }}
+        left={{ base: "8", md: "80", lg: "400", xl: "500" }}
+        // display="none"
+        flexDir="column"
+        justifyContent="center"
+        position={{
+          base: "absolute",
+          md: "absolute",
+          lg: "absolute",
+          xl: "absolute",
+        }}
+      >
+        <Stack
+          spacing="4"
+          alignSelf="center"
+          width={{ base: "100%", md: "100%", lg: "100%", xl: "auto" }}
+        >
+          <Box
+            width={{ base: "100%", md: "", lg: "400.7px", xl: "400.7px" }}
+            backgroundColor="#FAFAFA"
+            alignSelf="center"
+          >
+            <Input variant="filled" placeholder="Name*" borderRadius="0" />
+          </Box>
+          <Box
+            width={{ base: "100%", md: "", lg: "400.7px", xl: "400.7px" }}
+            backgroundColor="#FAFAFA"
+            alignSelf="center"
+          >
+            <Input
+              variant="filled"
+              placeholder="Email Address*"
+              borderRadius="0"
+            />
+          </Box>{" "}
+          <Box
+            width={{ base: "100%", md: "", lg: "400.7px", xl: "400.7px" }}
+            backgroundColor="#FAFAFA"
+            alignSelf="center"
+          >
+            <Input
+              variant="filled"
+              placeholder="Phone Number"
+              borderRadius="0"
+            />
+          </Box>{" "}
+          <Box
+            width={{ base: "100%", md: "", lg: "400.7px", xl: "400.7px" }}
+            alignSelf="center"
+          >
+            <Textarea
+              value={value}
+              variant="filled"
+              onChange={handleInputChange}
+              placeholder="Message*"
+              size="sm"
+              height="200px"
+            />
+          </Box>
+        </Stack>
+      </Box>
     </Flex>
   );
 };

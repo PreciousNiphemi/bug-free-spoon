@@ -5,18 +5,20 @@ import { Flex, Text, Stack, HStack, Spacer } from "@chakra-ui/react";
 const SOCIAL_ICON_STYLE = {
   width: 40,
   height: 40,
-  marginRight: 40,
+  // marginRight: 40,
 };
 
 export const Footer = () => {
   return (
     <Flex
-      flexDir="column"
+      // flexDir="column"
       minH="477.97px"
+      zIndex="10"
       backgroundColor="#282A3F"
       width="100%"
       alignItems="center"
       px={[3, 10]}
+      py={["300px", 10]}
       justifyContent="center"
     >
       <Flex justifyContent="center">
@@ -32,12 +34,7 @@ export const Footer = () => {
             Hendray
           </Text>
           <Flex justifyContent="center">
-            <Stack
-              // width="100%"
-              direction="row"
-              alignSelf="center"
-              mt={10}
-            >
+            <Stack direction="row" alignSelf="center" mt={10}>
               <SocialIcon
                 url="https://whatsapp.com"
                 style={SOCIAL_ICON_STYLE}
@@ -66,7 +63,11 @@ export const Footer = () => {
           </Flex>
 
           <Flex justifyContent="center">
-            <HStack spacing={28} alignSelf="center" mt={10}>
+            <HStack
+              spacing={{ base: 4, md: 4, lg: 4, xl: 28 }}
+              alignSelf="center"
+              mt={{ base: 20, md: 14, lg: 16, xl: 10 }}
+            >
               <Text
                 fontFamily="'Montserrat', sans-serif"
                 color="#FFFFFF"

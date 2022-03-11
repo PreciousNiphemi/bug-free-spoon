@@ -2,10 +2,10 @@ export const subscriptionDetails = [
   {
     subscriptionName: "Basic 3 months ",
     color: "#00C8FF",
-    price: "$500",
+    price: "$250",
     image: "/images/trade1.svg",
-    firstItem: " charts ideas with detailed sl and Tp's",
-    secondItem: " trade management guidance",
+    firstItem: ". charts ideas with detailed sl and Tp's",
+    secondItem: ". trade management guidance",
     btnColor: "#FFFFFF33",
   },
   {

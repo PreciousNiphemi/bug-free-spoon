@@ -23,14 +23,14 @@ export const HeroSection = () => {
       justifyContent="center"
       flexDir="column"
       pt={{ base: "2", md: "4" }}
-      px={{ base: "2", md: "10", lg: "10", xl: "16" }}
+      px={{ base: "2%", md: "10", lg: "10", xl: "16" }}
       position="relative"
       backgroundColor="#2737C7"
       backgroundRepeat="no-repeat"
       backgroundPosition="left , right top "
       backgroundImage="url('/images/pattern-side-hero.svg' ), url('/images/pattern-side-hero.svg')"
     >
-      <Flex width="100%">
+      <Flex width="100%" mb="10">
         <NavigationHeader />
       </Flex>
       <Flex flexDir="column" flex="1" justifyContent="center">
@@ -38,7 +38,7 @@ export const HeroSection = () => {
           <Box>
             <Stack>
               <Box
-                px={{ base: "4", md: "", lg: "", xl: "" }}
+                px={{ base: "2%", md: "", lg: "", xl: "" }}
                 color="#fff"
                 textAlign={{ base: "center", md: "left" }}
                 lineHeight={{ base: "54px", md: "", lg: "", xl: "72px" }}
@@ -46,7 +46,7 @@ export const HeroSection = () => {
                 fontSize={{ base: "45px", md: "", lg: "", xl: "60px" }}
                 dangerouslySetInnerHTML={{ __html: variant }}
               />
-              <Box px={{ base: "4", md: "", lg: "", xl: "" }}>
+              <Box px={{ base: "2%", md: "", lg: "", xl: "" }}>
                 <Text
                   color="#FFFFFF80"
                   textAlign={{ base: "center", md: "left" }}
@@ -63,22 +63,22 @@ export const HeroSection = () => {
           <Spacer />
 
           <Box
-            mr={{ base: "0", md: 4, lg: 16 }}
-            h={{ base: "255.57px", md: "315.35px" }}
-            w={{ base: "255.57px", md: "315.35px" }}
-            padding="3"
+            mr={{ base: 0, md: 4, lg: 16 }}
+            h={{ base: "200.57px", md: "315.35px" }}
+            w={{ base: "200.57px", md: "315.35px" }}
+            padding={{ base: "2", md: "3" }}
             borderRadius="60px"
             backgroundColor="gray"
-            transform="rotate(20deg)"
+            transform={{ base: "rotate(20deg)", md: "rotate(20deg)" }}
             position={{ base: "absolute", md: "initial" }}
             // top={{ base: "600px", md: "" }}
-            bottom={{ base: "-20%", md: "" }}
-            left={{ base: "16%", md: "" }}
+            bottom={{ base: "-18%", md: "" }}
+            left={{ base: "18%", md: "" }}
             // display={{ base: "none", md: "block" }}
           >
             <Box
-              h={{ base: "255.57px", md: "315.35px" }}
-              w={{ base: "255.57px", md: "315.35px" }}
+              h={{ base: "200.57px", md: "315.35px" }}
+              w={{ base: "200.57px", md: "315.35px" }}
               borderWidth=" 1px"
               borderColor="#FFFFFF"
               borderRadius="60px"

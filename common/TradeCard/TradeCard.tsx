@@ -23,10 +23,11 @@ export const TradeCard = ({
     <Box
       minH="413.19px"
       maxH="413.19px"
-      minW="523.79px"
-      maxW="523.79px"
-      padding={10}
+      minW={{ base: "300px", md: "350.9px", lg: "413.9px" }}
+      maxW={{ base: "300px", md: "350.9px", lg: "413.9px" }}
+      px={{ base: "8px", md: "", lg: "", xl: "12px" }}
       display="flex"
+      // display="none"
       flexDirection="column"
       justifyContent="center"
       borderRadius="50px"
@@ -62,28 +63,18 @@ export const TradeCard = ({
             color="#FFFFFF"
             fontFamily="'Montserrat', sans-serif"
             fontWeight={500}
-            fontSize="17px"
-            lineHeight="26.42px"
+            fontSize={{ base: "14px", md: "17px" }}
+            lineHeight={{ base: "21px", md: "26.42px" }}
           >
             Which includes:
           </Text>
           <HStack>
-            {/* <Text
-              color="#FFFFFF"
-              fontFamily="'Montserrat', sans-serif"
-              fontWeight={500}
-              fontSize="17px"
-              lineHeight="26.42px"
-              textAlign="center"
-            >
-              .
-            </Text> */}
             <Text
               color="#FFFFFF"
               fontFamily="'Montserrat', sans-serif"
               fontWeight={500}
-              fontSize="17px"
-              lineHeight="26.42px"
+              fontSize={{ base: "14px", md: "17px" }}
+              lineHeight={{ base: "21px", md: "26.42px" }}
               textAlign="center"
             >
               {firstItem}
@@ -91,22 +82,12 @@ export const TradeCard = ({
           </HStack>
 
           <HStack>
-            {/* <Text
-              color="#FFFFFF"
-              fontFamily="'Montserrat', sans-serif"
-              fontWeight={500}
-              fontSize="17px"
-              lineHeight="26.42px"
-              textAlign="center"
-            >
-              .
-            </Text> */}
             <Text
               color="#FFFFFF"
               fontFamily="'Montserrat', sans-serif"
               fontWeight={500}
-              fontSize="17px"
-              lineHeight="26.42px"
+              fontSize={{ base: "14px", md: "17px" }}
+              lineHeight={{ base: "21px", md: "26.42px" }}
               textAlign="center"
             >
               {secondItem}
@@ -120,8 +101,8 @@ export const TradeCard = ({
           color="#fff"
           fontWeight={300}
           textAlign="center"
-          fontSize="50px"
-          lineHeight="60px"
+          fontSize={{ base: "40px", md: "50px" }}
+          lineHeight={{ base: " 48px", md: "60px" }}
         >
           {" "}
           {price}
@@ -139,7 +120,7 @@ export const TradeCard = ({
           fontWeight={500}
           fontSize="15px"
           lineHeight="23.31px"
-          width="125.59px"
+          width={{ base: "105px", md: "125.59px" }}
           height="40.08px"
           borderRadius="20px"
           backgroundColor={btnColor}

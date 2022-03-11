@@ -7,7 +7,7 @@ import {
   Image,
   Stack,
 } from "@chakra-ui/react";
-import { InfoBox } from "@app/common";
+import { InfoBox, SideBox } from "@app/common";
 import { quotesDetails } from "@app/constants";
 
 export const info = [1, 2, 3, 4];
@@ -29,10 +29,10 @@ export const QuoteBox = ({
 }: Props) => {
   return (
     <Box
-      width="365.28px"
-      pl="16"
-      pr="16"
-      height="201.53px"
+      width={{ base: "236.37px", md: "365.28px" }}
+      pl={{ base: "20", md: "16" }}
+      pr={{ base: "18", md: "16" }}
+      height={{ base: "130.41px", md: "201.53px" }}
       display="flex"
       flexDir="column"
       justifyContent="center"
@@ -46,8 +46,8 @@ export const QuoteBox = ({
           fontFamily="Montserrat"
           fontWeight="500"
           textAlign="left"
-          fontSize="20px"
-          lineHeight="24.38px"
+          fontSize={{ base: "12.94px", md: "20px" }}
+          lineHeight={{ base: "15.78px", md: "24.38px" }}
         >
           {title}
         </Text>
@@ -61,13 +61,12 @@ export const QuoteSection = () => {
     <Flex
       flexDir="column"
       py="20"
-      px="20"
-      minHeight="100vh"
+      minHeight="80vh"
       backgroundRepeat="no-repeat"
-      backgroundPosition="right bottom"
+      backgroundPosition="right center"
       backgroundImage="images/dots.svg"
     >
-      <Flex justifyContent="center" mb={20} position="relative">
+      <Flex justifyContent="center">
         <Stack>
           <Text
             color="#000000"
@@ -78,21 +77,49 @@ export const QuoteSection = () => {
             fontFamily="'KENOKY', sans-serif"
             lineHeight={{ base: "", md: "", lg: "", xl: "50px" }}
           >
-            No whitewash or fake <br />
-            <Text as="span" textAlign="center">
+            No whitewash or fake
+          </Text>
+          <Box position="relative" display="flex" justifyContent="center">
+            <Box alignSelf="center">
+              <Image src="/images/wrapper.svg" width="190px" />
+            </Box>
+            <Text
+              color="#000000"
+              fontSize="30px"
+              alignSelf="center"
+              textAlign="center"
+              zIndex={10}
+              fontFamily="'KENOKY', sans-serif"
+              lineHeight={{ base: "", md: "", lg: "", xl: "50px" }}
+              position="absolute"
+              top={{ base: "0px", md: "0px", lg: "0px", xl: "0px" }}
+            >
               deep quotes
             </Text>
-          </Text>
-          <Box
-            alignSelf="center"
-            position="absolute"
-            top={{ base: "", md: "", lg: "", xl: "42px" }}
-          >
-            <Image src="/images/wrapper.svg" width="190px" />
           </Box>
         </Stack>
       </Flex>
-      <Flex justifyContent="center">
+      <Flex
+        my={{ base: "6", md: "6" }}
+        justifyContent="flex-start"
+        width="100%"
+      >
+        <SideBox />
+      </Flex>
+      <Flex my={{ base: "", md: "6" }} justifyContent="center" width="100%">
+        <Text
+          textAlign="center"
+          color="#7D7D7D"
+          fontSize={{ base: "", md: "20px" }}
+          fontFamily="Montserrat"
+          fontWeight={500}
+          lineHeight={{ base: "", md: "24.38px" }}
+          display={{ base: "none", md: "block" }}
+        >
+          Get quality value for your money.
+        </Text>
+      </Flex>
+      <Flex justifyContent="center" px={{ base: "20", md: "20" }}>
         <Wrap justify="center" spacing="20">
           {quotesDetails.map((quoteDetails, quoteKey) => {
             return (
@@ -109,6 +136,20 @@ export const QuoteSection = () => {
             );
           })}
         </Wrap>
+      </Flex>
+      <Flex mt={20} justifyContent="center">
+        <Stack direction="row" spacing={{ base: 2, md: 2 }}>
+          <Text
+            color="#000000"
+            fontSize="20px"
+            fontWeight={500}
+            lineHeight="24px"
+            fontFamily="'Montserrat', sans-serif"
+          >
+            Get Started
+          </Text>
+          <Image src="images/arrow2.svg" />
+        </Stack>
       </Flex>
     </Flex>
   );

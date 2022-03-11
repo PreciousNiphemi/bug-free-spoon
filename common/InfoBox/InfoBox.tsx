@@ -8,7 +8,7 @@ export const InfoBox = ({ innerColor, outerColor, image }) => {
       boxShadow="md"
       borderRadius="20px"
       position="absolute"
-      left={{ base: "", md: "", lg: "", xl: "-40px" }}
+      left={{ base: "-22px", md: "-24px", lg: "-28px", xl: "-40px" }}
       backgroundColor={innerColor}
     >
       <Box h="80.07px" w="80.07px" borderRadius="20px" position="relative">
@@ -22,8 +22,8 @@ export const InfoBox = ({ innerColor, outerColor, image }) => {
           boxShadow="md"
           backgroundColor={outerColor}
           position="absolute"
-          top={{ base: "", md: "", lg: "", xl: "6px" }}
-          left={{ base: "", md: "", lg: "", xl: "6px" }}
+          top={{ base: "", md: "-6px", lg: "-6px", xl: "-6px" }}
+          left={{ base: "", md: "6px", lg: "6px", xl: "6px" }}
         >
           <Flex justifyContent="center">
             <Image src={image} h="7" w="7" />

@@ -19,7 +19,7 @@ export const NavigationHeader = () => {
 
         {/* desktop view */}
 
-        <Flex display={{ base: "none", md: "none", lg: "flex" }}>
+        <Flex display={{ base: "none", md: "flex", lg: "flex" }}>
           <Link href="">
             <NavText>Backstory</NavText>
           </Link>
@@ -34,10 +34,10 @@ export const NavigationHeader = () => {
         </Flex>
 
         {/* Tablet & Mobile View */}
-        <Flex flex={1} d={{ base: "flex", lg: "none" }}>
+        <Flex flex={1} d={{ base: "flex", md: "none" }}>
           <Spacer />
 
-          <Box d={{ base: "block", lg: "none" }}>
+          <Box d={{ base: "block", md: "none" }}>
             <HamBurgerMenu
               right
               menuClassName={"bm-menu "}

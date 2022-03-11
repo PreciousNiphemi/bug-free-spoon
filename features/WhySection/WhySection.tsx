@@ -6,6 +6,7 @@ export const WhySection = () => {
     <Flex
       flexDir="column"
       minH="80vh"
+      width="100%"
       justifyContent="center"
       backgroundRepeat="no-repeat"
       backgroundPosition="right bottom"
