@@ -72,10 +72,18 @@ export const HeroSection = () => {
             transform={{ base: "rotate(20deg)", md: "rotate(20deg)" }}
             position={{ base: "absolute", md: "initial" }}
             // top={{ base: "600px", md: "" }}
-            bottom={{ base: "-18%", md: "" }}
-            left={{ base: "18%", md: "" }}
+            bottom={{ base: "-16%", md: "" }}
+            left={{ base: "20%", md: "" }}
             // display={{ base: "none", md: "block" }}
           >
+            {/* <iframe
+              // width="804"
+              // height="452"
+              src="https://www.youtube.com/embed/-MlkASchodc"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              // allowfullscreen
+            ></iframe> */}
             <Box
               h={{ base: "200.57px", md: "315.35px" }}
               w={{ base: "200.57px", md: "315.35px" }}
@@ -88,7 +96,7 @@ export const HeroSection = () => {
         <Flex
           justifyContent={{ base: "center", md: "normal" }}
           mt={{ base: "20", md: "0" }}
-          mb={{ base: "20%", md: "0" }}
+          mb={{ base: "30%", md: "0" }}
           pb={{ base: "20%", md: "0" }}
           px={{ base: "0", md: "4", lg: "", xl: "" }}
         >

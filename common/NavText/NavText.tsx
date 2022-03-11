@@ -16,9 +16,9 @@ export const NavText = ({ children, onClick, ...restProps }: NavTextProps) => {
       px={[3, 6]}
       fontFamily="'Montserrat', sans-serif"
       fontWeight={500}
-      fontSize={{ base: "", md: "14px", lg: "15px", xl: "15px" }}
-      lineHeight={{ base: "", md: "18.29px" }}
-      color="#FFFFFF"
+      fontSize={{ base: "25px", md: "14px", lg: "15px", xl: "15px" }}
+      lineHeight={{ base: "30.48px", md: "18.29px" }}
+      color={{ base: "#000000", md: "#FFFFFF" }}
       onClick={onClick}
       alignItems="center"
       py={{ base: 2, md: 1 }}
