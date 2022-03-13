@@ -15,6 +15,7 @@ export const subscriptionDetails = [
     image: "/images/trade2.svg",
     firstItem: ". charts ideas with detailed sl and Tp's",
     secondItem: ". trade management guidance",
+    thirdItem: ". live trading sessions twice a month",
     btnColor: "rgba(255, 255, 255, 0.2)",
   },
 ];

@@ -7,6 +7,7 @@ type Props = {
   image: string;
   firstItem: string;
   secondItem: string;
+  thirdItem?: string;
   btnColor: string;
 };
 
@@ -17,6 +18,7 @@ export const TradeCard = ({
   image,
   firstItem,
   secondItem,
+  thirdItem,
   btnColor,
 }: Props) => {
   return (
@@ -91,6 +93,19 @@ export const TradeCard = ({
               textAlign="center"
             >
               {secondItem}
+            </Text>
+          </HStack>
+
+          <HStack display={thirdItem ? "flex" : "none"}>
+            <Text
+              color="#FFFFFF"
+              fontFamily="'Montserrat', sans-serif"
+              fontWeight={500}
+              fontSize={{ base: "14px", md: "17px" }}
+              lineHeight={{ base: "21px", md: "26.42px" }}
+              textAlign="center"
+            >
+              {thirdItem}
             </Text>
           </HStack>
         </Stack>

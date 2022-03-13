@@ -6,10 +6,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/kenoky" />
-          {/* <link
+          <link
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=optional"
             rel="stylesheet"
-          /> */}
+          />
         </Head>
         <body>
           <Main />

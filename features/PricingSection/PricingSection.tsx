@@ -91,6 +91,7 @@ export const PricingSection = () => {
                   image={details.image}
                   firstItem={details.firstItem}
                   secondItem={details.secondItem}
+                  thirdItem={details.thirdItem}
                   btnColor={details.btnColor}
                 />
               </WrapItem>
