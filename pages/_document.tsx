@@ -5,11 +5,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link href="http://fonts.cdnfonts.com/css/kenoky" rel="stylesheet" />
-          <link
+          <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/kenoky" />
+          {/* <link
             href="https://fonts.googleapis.com/css2?family=Montserrat&display=optional"
             rel="stylesheet"
-          />
+          /> */}
         </Head>
         <body>
           <Main />
