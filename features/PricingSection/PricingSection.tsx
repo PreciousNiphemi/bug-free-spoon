@@ -15,6 +15,7 @@ export const PricingSection = () => {
   return (
     <Flex
       width="100%"
+      id="pricing"
       // position="relative"
       // top={100}
       py={20}

@@ -24,6 +24,7 @@ export const ContactSection = () => {
         lg: "relative",
         xl: "relative",
       }}
+      id="contact"
     >
       <Flex
         backgroundColor="#2737C7"

@@ -42,14 +42,14 @@ const MobileNavigation = ({ isOpen, onClose }) => {
             <CloseIcon alignSelf="center" />
           </Box>
           <VStack textAlign="center" spacing={6}>
-            <Link href="" passHref>
+            <Link href="#backstory" passHref>
               <NavText>Backstory</NavText>
             </Link>
 
-            <Link href="" passHref>
+            <Link href="#pricing" passHref>
               <NavText>Pricing</NavText>
             </Link>
-            <Link href="" passHref>
+            <Link href="#contact" passHref>
               <NavText>Contacts</NavText>
             </Link>
           </VStack>
@@ -75,14 +75,14 @@ export const NavigationHeader = () => {
         {/* desktop view */}
 
         <Flex display={{ base: "none", md: "flex", lg: "flex" }}>
-          <Link href="">
+          <Link href="#backstory">
             <NavText>Backstory</NavText>
           </Link>
-          <Link href="">
+          <Link href="#pricing">
             <NavText>Pricing</NavText>
           </Link>
 
-          <Link href="">
+          <Link href="#contact">
             <NavText>Contact</NavText>
           </Link>
           <Spacer />

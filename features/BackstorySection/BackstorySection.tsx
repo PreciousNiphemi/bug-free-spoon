@@ -4,13 +4,12 @@ import { Backstory } from "@app/common";
 export const BackstorySection = () => {
   return (
     <Box
-      // px={{ base: "0", md: "10" }}
       px={{ base: "4", md: "20" }}
       py={{ base: "40", md: "20", lg: "20", xl: "20" }}
       mt={{ base: "20", md: 0 }}
       minH={{ base: "auto", md: "90vh", lg: "80vh", xl: "80vh" }}
-      // width="100%"
       display="flex"
+      id="backstory"
       flexDir={{ base: "column", md: "column", lg: "row", xl: "row" }}
       justifyContent={{
         base: "",
